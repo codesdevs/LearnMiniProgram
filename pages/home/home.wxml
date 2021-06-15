@@ -1,3 +1,15 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<button size="mini" bindtap="click">按钮</button>
+<!-- 1.小程序的数据绑定：{{变量}} -->
+<view>{{message}}</view>
+
+<!-- 2.列表展示 -->
+<view wx:for="{{students}}" wx:key="id">
+  id：{{item.id}} 姓名：{{item.name}} 年龄：{{item.age}}
+</view>
+
+<!-- 3.事件监听改变计数：0 -->
+<view>
+  <text>当前计数：{{counter}}</text>
+</view>
+<button size="mini" bindtap="reduceBtnClick" disabled="{{counter<=0}}">-</button>
+<button size="mini" bindtap="plusBtnClick">+</button>
