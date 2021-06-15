@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
 <button size="mini" bindtap="click">按钮</button>
+<view>1.知识点1</view>
+<view>哈哈哈哈哈哈</view>
